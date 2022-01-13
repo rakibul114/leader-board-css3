@@ -16,6 +16,23 @@
 
     <!-- Header starts here -->
     <header>
+        
+        <nav class="topnav">
+                <div class="logo">
+                    <a href="index.html"><img src="images/icons/logo.png"></a>
+                </div>
+                <div class="nav-links">
+                    <!-- <i class="fa fa-times" onclick="hideMenu()"></i> (for small screen)--> 
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">WORKS</a></li>
+                        <li><img src="images/icons/profile.png"></li>                       
+                    </ul>
+                </div>
+                <!-- <i class="fa fa-bars" onclick="showMenu()"></i> (for small screen)-->
+        </nav>
+       
 
     </header>
     <!-- Header ends here -->
@@ -186,6 +203,19 @@
 
     </main>
     <!-- Main ends here -->
+
+
+    <!-- JavaScript for Toggle menu starts here -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
     
 </body>
 </html>
