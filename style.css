@@ -103,8 +103,7 @@ hr{
     Width: 252.42px;
     Height: 269.79px;
     border-radius: 10px;
-    padding-top: 5px;
-    padding-left: 10px;
+    padding: 13px 10px 16px 12px;    
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     
 }
@@ -135,4 +134,33 @@ hr{
     padding: 2px 8px;
     border-radius: 30px;
     color: #FF4A60;
+}
+
+/* --------------------------
+        Media Queries
+----------------------------- */
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    }    
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
